@@ -43,4 +43,8 @@ public class Persona {
         System.out.println("Su anio de nacimiento fue en el: " + (2024 - this.edad));
     }
 
+    public void mensaje(){
+        System.out.println("Mi nombre es: " + this.nombre + " , Mi edad es: " + this.edad);
+    }
+
 }

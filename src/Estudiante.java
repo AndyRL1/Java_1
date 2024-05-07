@@ -8,4 +8,10 @@ public class Estudiante extends Persona{
     public void setGrado(Integer grado) {
         this.grado = grado;
     }
+
+    @Override
+    public void mensaje(){
+        super.mensaje();
+        System.out.print(" , Mi grado es: " + this.grado);
+    }
 }
