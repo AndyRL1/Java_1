@@ -1,6 +1,11 @@
 public class Estudiante extends Persona{
     private Integer grado;
 
+    public Estudiante(String nombre, Integer edad, String fechaNacimiento, Integer grado) {
+        super(nombre, edad, fechaNacimiento);
+        this.grado = grado;
+    }
+
     public Integer getGrado() {
         return grado;
     }
@@ -14,4 +19,5 @@ public class Estudiante extends Persona{
         super.mensaje();
         System.out.print(" , Mi grado es: " + this.grado);
     }
+
 }
