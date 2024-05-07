@@ -39,4 +39,8 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public void calcularFechaNacimiento(){
+        System.out.println("Su anio de nacimiento fue en el: " + (2024 - this.edad));
+    }
+
 }
