@@ -22,7 +22,13 @@ public class Persona {
     }
 
     public void setEdad(Integer edad) {
-        this.edad = edad;
+        if (edad > 0 ){
+            this.edad = edad;
+            System.out.println("Edad establecida");
+        }
+        else{
+            System.out.println("Ingrese una edad valida");
+        }
     }
 
     public String getFechaNacimiento() {
@@ -32,4 +38,5 @@ public class Persona {
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
 }
